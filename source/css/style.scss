@@ -1,0 +1,15 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/flexboxgrid/css/flexboxgrid.min.css";
+
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
