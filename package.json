@@ -1,0 +1,32 @@
+{
+  "name": "brandly",
+  "version": "1.0.0",
+  "description": "Главная страница магазина одежды",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbarinov/brandly.git"
+  },
+  "author": "Nikita Barinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nbarinov/brandly/issues"
+  },
+  "homepage": "https://github.com/nbarinov/brandly#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "flexboxgrid": "^6.3.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "normalize.css": "^7.0.0"
+  }
+}
