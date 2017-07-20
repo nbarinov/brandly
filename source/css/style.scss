@@ -8,8 +8,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 16px;
 }
+
+// ui
+@import "ui/slider";
+
+// blocks
+@import "blocks/main-nav";
+@import "blocks/page-header";
