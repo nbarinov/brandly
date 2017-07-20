@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 10;
 
   width: 100%;
 
@@ -30,7 +30,7 @@
 
   a {
     font: {
-      family: $bebas-neue-regular, serif;
+      family: $bebas-neue-regular, sans-serif;
       size: 2.25rem;
       weight: normal;
     }
@@ -39,7 +39,7 @@
 
     span {
       font: {
-        family: $bebas-neue-book, serif;
+        family: $bebas-neue-book, sans-serif;
         size: 1.6875rem;
       }
       line-height: 2.28125rem;
@@ -63,7 +63,6 @@
 
   width: 30px;
   height: 30px;
-  //padding: 15px;
 
   background: 0 0;
   border: 0;
