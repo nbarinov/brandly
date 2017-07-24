@@ -9,13 +9,13 @@ navToggle.addEventListener('click', function() {
     header.classList.add('page-header--blur');
     document.body.style.overflow = 'hidden';
     document.ontouchmove = function(e) { e.preventDefault(); }
-    stopHeroeSlider();
+    heroeSlider.stop();
   } else {
     mainNav.classList.remove('main-nav__opened');
     mainNav.classList.add('main-nav__closed');
     header.classList.remove('page-header--blur');
     document.body.style.overflow = 'auto';
     document.ontouchmove = function(e){ return true; }
-    startHeroeSlider();
+    heroeSlider.start();
   }
 });

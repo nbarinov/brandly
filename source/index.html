@@ -37,7 +37,7 @@
   </nav>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div id="heroeSlider" class="page-header__slider  slider" data-interval='4500'>
+      <div id="heroeSlider" class="page-header__slider  slider">
         <div class="slider__wrapper">
           <div class="slider__slide slider__slide--fade">
             <div class="slider__layout"></div>
@@ -84,10 +84,10 @@
           </div>
         </div>
         <div class="slider__dots">
-          <span class="slider__dot" onclick="currentSlide(1)"></span>
-          <span class="slider__dot" onclick="currentSlide(2)"></span>
-          <span class="slider__dot" onclick="currentSlide(3)"></span>
-          <span class="slider__dot" onclick="currentSlide(4)"></span>
+          <span class="slider__dot" onclick="heroeSlider.currentSlide(1)"></span>
+          <span class="slider__dot" onclick="heroeSlider.currentSlide(2)"></span>
+          <span class="slider__dot" onclick="heroeSlider.currentSlide(3)"></span>
+          <span class="slider__dot" onclick="heroeSlider.currentSlide(4)"></span>
         </div>
       </div>
     </div>
@@ -134,5 +134,9 @@
   </section>
 
   <script src="js/script.min.js"></script>
+  <script>
+    var heroeSlider = new Slider('#heroeSlider', 0);
+    heroeSlider.start();
+  </script>
 </body>
 </html>
