@@ -6,7 +6,7 @@
 
   width: 100%;
 
-  background-color: #000;
+  //background-color: #000;
 }
 
 .main-nav__wrapper {
@@ -128,7 +128,7 @@
 .main-nav__opened .main-nav__toggle {
   span {
     background: 0 0;
-    transition: background .3s 0;
+    transition: background-color .3s 0;
 
     &::before,
     &::after {
@@ -149,15 +149,12 @@
 
 .main-nav__list-wrapper {
   position: absolute;
-  top: 0;
+  top: -55px;
   left: 0;
   z-index: -1;
 
   width: 100vw;
-  height: calc(100vh - 55px);
-
-  // TODO: заблюрить фон
-  background-color: #000;
+  height: calc(100vh);
 
   opacity: 0;
   visibility: hidden;
@@ -167,7 +164,8 @@
 }
 
 .main-nav__opened .main-nav__list-wrapper {
-  top: 55px;
+  position: fixed;
+  top: 0;
   opacity: 1;
   visibility: visible;
 }

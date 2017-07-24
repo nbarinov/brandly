@@ -1,12 +1,20 @@
 var heroeSlider = document.querySelector('#heroeSlider'),
     heroeSliderIndex = 1,
     heroeSliderCount = document.querySelectorAll('#heroeSlider .slider__slide').length,
-    heroeSliderInterval = heroeSlider.dataset.interval;
+    heroeSliderInterval = heroeSlider.dataset.interval,
+    timer = null;
 
-setInterval(function() {
-  if(heroeSliderIndex > heroeSliderCount)
-    heroeSliderIndex = 1;
+var startHeroeSlider = function() {
+  timer = setInterval(function() {
+    if(heroeSliderIndex > heroeSliderCount)
+      heroeSliderIndex = 1;
 
-  currentSlide(++heroeSliderIndex);
-  console.log('slide', heroeSliderIndex);
-}, heroeSliderInterval);
+    currentSlide(++heroeSliderIndex);
+  }, heroeSliderInterval);
+}
+
+var stopHeroeSlider = function() {
+  clearInterval(timer);
+}
+
+startHeroeSlider();
