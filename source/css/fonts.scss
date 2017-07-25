@@ -1,0 +1,59 @@
+@font-face {
+  font: {
+    family: $bebas-neue-regular;
+    weight: normal;
+    style: normal;
+  }
+  src: url('../fonts/BebasNeueRegular.eot');
+  src: local('☺'), url('../fonts/BebasNeueRegular.woff') format('woff'),
+       url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+       url('../fonts/BebasNeueBook.svg') format('svg');
+}
+
+@font-face {
+  font: {
+    family: $bebas-neue-book;
+    weight: normal;
+    style: normal;
+  }
+  src: url('../fonts/BebasNeueBook.eot');
+  src: local('☺'), url('../fonts/BebasNeueBook.woff') format('woff'),
+       url('../fonts/BebasNeueBook.ttf') format('truetype'),
+       url('../fonts/BebasNeueBook.svg') format('svg');
+}
+
+@font-face {
+  font: {
+    family: $lato-regular;
+    weight: normal;
+    style: normal;
+  }
+  src: url('../fonts/LatoRegular.eot');
+  src: local('☺'), url('../fonts/LatoRegular.woff') format('woff'),
+       url('../fonts/LatoRegular.ttf') format('truetype'),
+       url('../fonts/BebasNeueBook.svg') format('svg');
+}
+
+@font-face {
+  font: {
+    family: $lato-bold;
+    weight: normal;
+    style: normal;
+  }
+  src: url('../fonts/LatoBold.eot');
+  src: local('☺'), url('../fonts/LatoBold.woff') format('woff'),
+       url('../fonts/LatoBold.ttf') format('truetype'),
+       url('../fonts/LatoBold.svg') format('svg');
+}
+
+@font-face {
+  font: {
+    family: $lato-black;
+    weight: normal;
+    style: normal;
+  }
+  src: url('../fonts/LatoBlack.eot');
+  src: local('☺'), url('../fonts/LatoBlack.woff') format('woff'),
+       url('../fonts/LatoBlack.ttf') format('truetype'),
+       url('../fonts/LatoBlack.svg') format('svg');
+}

@@ -1,0 +1,90 @@
+.button {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 51px;
+  min-height: 51px;
+
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: $gray;
+
+  transition: border-color 150ms ease-out;
+
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    display: block;
+    width: 100%;
+
+    font: {
+      family: Open Sans, sans-serif;
+      weight: bold;
+    }
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 51px;
+    color: $gray;
+
+    transform: translate(-50%, -50%);
+
+    transition: color 150ms ease-out;
+  }
+
+  &::before,
+  &::after {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    content: '';
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $gray;
+
+    transition-property: height, background-color;
+    transition: 150ms ease-out;
+  }
+
+  &:hover {
+    span {
+      color: #fff;
+    }
+
+    &::before,
+    &::after {
+      height: 50%;
+    }
+  }
+}
+
+.button--white {
+  border-width: 0;
+
+  background-color: #fff;
+
+  span {
+    color: #000;
+  }
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  &:hover span {
+    color: #000;
+  }
+}

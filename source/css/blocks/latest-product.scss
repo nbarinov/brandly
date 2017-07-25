@@ -1,0 +1,202 @@
+.latest-product {}
+
+.latest-product__wrapper {}
+
+.latest-product__grid {}
+
+.latest-product__item {
+  position: relative;
+
+  display: flex;
+
+  width: 100%;
+  height: 175px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($dark-blue, 0.7);
+  }
+}
+
+.latest-product__name {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  flex-basis: 100%;
+
+  margin: 30px;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: #fff;
+
+  span {
+    flex-basis: 100%;
+
+    font: {
+      family: Open Sans, sans-serif;
+      size: 2.5rem;
+      weight: 200;
+      style: italic;
+    }
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+  }
+
+  transition-property: border-width, margin;
+  transition: 150ms ease-in-out;
+
+  &:hover {
+    border-width: 25px;
+    margin: 8px;
+  }
+}
+
+.latest-product__item--men {
+  background-image: url('../images/latest-product/men.jpg');
+}
+
+.latest-product__item--woman {
+  background-image: url('../images/latest-product/woman.jpg');
+}
+
+.latest-product__item--watches {
+  background-image: url('../images/latest-product/watches.jpg');
+}
+
+.latest-product__sale {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+  height: 225px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($dark-blue, 0.7);
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+
+    flex-basis: 100%;
+
+    font: {
+      family: $lato-black;
+      size: 2.25rem;
+      weight: normal;
+    }
+    text-align: center;
+    color: #fff;
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+
+      width: 192px;
+      height: 1px;
+      margin-right: auto;
+      margin-left: auto;
+
+      background-color: #fff;
+
+      transition: width 180ms ease-out;
+    }
+
+    &::before {
+      margin-bottom: 15px;
+    }
+
+    &::after {
+      margin-top: 15px;
+    }
+  }
+
+  &:hover {
+    span::before,
+    span::after {
+      width: 256px;
+    }
+  }
+}
+
+.latest-product__sale--new-col {
+  background-image: url('../images/latest-product/new-col.jpg');
+}
+
+.latest-product__sale--sale {
+  background-image: url('../images/latest-product/sale.jpg');
+}
+
+@media (min-width: $table-width) {
+  .latest-product__item {
+    height: 318px;
+  }
+
+  .latest-product__sale {
+    height: 368px;
+    margin-top: 30px;
+
+    span {
+      font-size: 2.8125rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .latest-product__item {
+    width: 370px;
+    height: 418px;
+
+    background-size: auto;
+  }
+
+  .latest-product__sale {
+    width: 570px;
+    height: 418px;
+
+    background-size: auto;
+  }
+}

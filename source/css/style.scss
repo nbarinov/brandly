@@ -1,0 +1,31 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/flexboxgrid/css/flexboxgrid.min.css";
+
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+// ui
+@import "ui/button";
+@import "ui/slider";
+
+// blocks
+@import "blocks/main-nav";
+@import "blocks/page-header";
+@import "blocks/section";
+@import "blocks/latest-product";
+@import "blocks/trending-items";
+@import "blocks/from-the-blog";
+@import "blocks/article";
+@import "blocks/subscribe-form";
+@import "blocks/page-footer";
