@@ -1,0 +1,17 @@
+.page-footer {}
+
+.page-footer__wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.page-footer__heart {
+  display: inline-block;
+
+  width: 20px;
+  height: 16px;
+
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAABGUlEQVQ4ja3SPy9DURjH8c+9pBJTF8QgMRqwSSxEhITNIrEYGCxeAOIFiBdg6mKSJiaLUWKTGIsY7lBDCRKTSOhiuEfTXNUW/U7nPOf3fHP+RYkaY9jCLAZRxgn28BgyA9jGEobxgDPsowRREK7gED2+84Q55HCK/gaZd6zjKEoYx2Vo+IkyujDUJPOBiW7stJCRHq8VOexGSXqkvjYa2uE5Rr5DMsjH0vvpFHcxih0UFqOEXlxI/+F/KGEyxhsWkDTPNyXBIt7iULjHDK7/ILsJvRWI6xYqmMb5L2TnmPqSZYXwgnkU2pAVQvalvpgVQhUbWJPeb5ZXrIZMNbsYtXiJERxjNMyvsIzbnxpaCUm/1UEYb2q86xqfPho4i7a5F3wAAAAASUVORK5CYII=');
+  background-position: center;
+  background-repeat: no-repeat;
+}
