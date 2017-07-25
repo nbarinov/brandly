@@ -69,3 +69,22 @@
     }
   }
 }
+
+.button--white {
+  border-width: 0;
+
+  background-color: #fff;
+
+  span {
+    color: #000;
+  }
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  &:hover span {
+    color: #000;
+  }
+}
