@@ -82,8 +82,7 @@
   @include visually-hidden;
 }
 
-.trending-items__label,
-.trending-items__button {
+.trending-items__label {
   position: relative;
 
   display: flex;
@@ -168,31 +167,7 @@
 }
 
 .trending-items__button {
-  min-height: 51px;
   margin-top: 25px;
-
-  border-color: $gray;
-
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 51px;
-
-  span {
-    display: block;
-    width: 100%;
-  }
-
-  &:hover {
-    span {
-      color: #fff;
-    }
-
-    &::before,
-    &::after {
-      height: 50%;
-    }
-  }
 }
 
 .trending-items__dots {
