@@ -29,8 +29,7 @@ gulp.task('browserSync', function() {
 
 gulp.task('html', function() {
   return gulp.src(paths.html)
-    .pipe(gulp.dest('./dist/'))
-    .pipe(reload({stream: true}));
+    .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('css', function() {
@@ -39,8 +38,7 @@ gulp.task('css', function() {
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('./dist/css/'))
-    .pipe(notify('CSS saved'))
-    .pipe(reload({stream: true}));
+    .pipe(notify('CSS saved'));
 });
 
 gulp.task('scripts', function() {
@@ -48,21 +46,18 @@ gulp.task('scripts', function() {
     .pipe(uglifyjs())
     .pipe(concat('script.min.js'))
     .pipe(gulp.dest('./dist/js/'))
-    .pipe(notify('JS saved'))
-    .pipe(reload({stream: true}));
+    .pipe(notify('JS saved'));
 });
 
 gulp.task('fonts', function() {
   return gulp.src(paths.fonts)
-    .pipe(gulp.dest('./dist/fonts/'))
-    .pipe(reload({stream: true}));
+    .pipe(gulp.dest('./dist/fonts/'));
 });
 
 gulp.task('images', function () {
   return gulp.src(paths.images)
     .pipe(imagemin())
-    .pipe(gulp.dest('./dist/images/'))
-    .pipe(reload({stream: true}));
+    .pipe(gulp.dest('./dist/images/'));
 });
 
 gulp.task('watcher', function() {
@@ -73,4 +68,5 @@ gulp.task('watcher', function() {
   gulp.watch(paths.images, ['images']);
 });
 
-gulp.task('default', ['watcher', 'browserSync']);
+gulp.task('default', ['html', 'css', 'scripts', 'fonts', 'images', 'watcher', 'browserSync']);
+gulp.task('build', ['html', 'css', 'scripts', 'fonts', 'images'])
